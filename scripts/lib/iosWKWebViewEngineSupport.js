@@ -70,6 +70,7 @@ function loadProjectFile() {
   try {
     return loadProjectFile_cordova_7_and_above();
   } catch(e) {
+    console.log("ERROR: " + e.toString());
   }
   
   try {
