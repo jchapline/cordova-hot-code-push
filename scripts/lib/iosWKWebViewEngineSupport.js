@@ -99,6 +99,7 @@ function loadProjectFile_cordova_5_and_6() {
 
 function loadProjectFile_cordova_7_and_above() {
   var pbxPath = path.join(iosPlatformPath, projectName + '.xcodeproj', 'project.pbxproj');
+  console.log(`\n\nPBX PATH: ${pbxPath}\n\n`);
   var xcodeproj = context.requireCordovaModule('xcode').project(pbxPath);
   xcodeproj.parseSync();
 
